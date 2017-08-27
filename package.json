@@ -1,0 +1,33 @@
+{
+  "name": "chromeless-instagram",
+  "version": "0.0.1",
+  "description": "Chromeless based Instagram service. No need for API anymore",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel ./src/*.js -d build",
+    "example": "npm run build && node examples/basic"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafalWilinski/chromeless-instagram.git"
+  },
+  "keywords": ["instagram", "chromeless", "api", "crawler"],
+  "author": "RafalWilinski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RafalWilinski/chromeless-instagram/issues"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "homepage": "https://github.com/RafalWilinski/chromeless-instagram#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2017": "^6.24.1",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^15.1.0"
+  },
+  "dependencies": {
+    "chromeless": "^1.2.0"
+  }
+}
