@@ -25,7 +25,7 @@ const Instagram = require("../build/lib/index");
 
 async function run() {
   const session = new Instagram();
-  const stats = await session.login("rwilinski", "rafal10");
+  const stats = await session.login("username", "password");
   const photos = await session.getMyPhotos();
 
   console.log(stats, photos);
